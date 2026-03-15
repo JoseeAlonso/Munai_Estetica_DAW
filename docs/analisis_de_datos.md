@@ -63,13 +63,13 @@ Las entidades principales del sistema están identificadas como:
 
 ## Relaciones entre entidades
 
-Cliente - Cita
+Cliente - Cita :
 Un cliente puede tener varias citas, pero una cita pertenece a un único cliente.
 
-Empleado - Cita
+Empleado - Cita :
 Un empelado puede atender muchas citas, pero cada cita es realizada por un único empelado.
 
-Tratamiento - Cita
+Tratamiento - Cita :
 Un tratamiento puede estar asociado a muchas citas, pero cada cita corresponde a un único tratamiento.
 
 
