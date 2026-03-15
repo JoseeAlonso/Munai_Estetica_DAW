@@ -76,10 +76,10 @@ Un tratamiento puede estar asociado a muchas citas, pero cada cita corresponde a
 
 ## Claves Primarias (PK)
 
-Cliente -> id_cliente
-Empleado -> id_empleado
-Tratamiento -> id_tratamiento
-Cita -> id_cita
+- Cliente -> id_cliente
+- Empleado -> id_empleado
+- Tratamiento -> id_tratamiento
+- Cita -> id_cita
 
 
 
