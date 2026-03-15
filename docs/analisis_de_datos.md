@@ -26,7 +26,7 @@ Las entidades principales del sistema están identificadas como:
 
 
 
-## Atributoos de las entidades
+## Atributos de las entidades
 
 ### Cliente
 
