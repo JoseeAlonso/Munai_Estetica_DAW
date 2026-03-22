@@ -67,11 +67,8 @@ PK -> id_tratamiento
 
 ## Relaciones entre tablas
 
-clientes (1) -- (N) citas
-Un cliente puede tener muchas citas
+clientes (1) -- (N) citas -- Un cliente puede tener muchas citas
 
-empelados (1) -- (N) citas
-Un empleado puede realizar muchas citas
+empelados (1) -- (N) citas -- Un empleado puede realizar muchas citas
 
-tratamientos (1) -- (N) citas
-Un tratamiento puede estar presente en muchas citas
+tratamientos (1) -- (N) citas -- Un tratamiento puede estar presente en muchas citas
