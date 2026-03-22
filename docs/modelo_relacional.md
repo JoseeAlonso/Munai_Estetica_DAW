@@ -57,11 +57,11 @@ PK -> id_tratamiento
 | id_tratamiento | INT | Tratamiento reservado (FK) |
 
 ### Claves:
-PK -> id_cita
+- PK -> id_cita
 
-FK -> id_cliente -> clientes(id_cliente)
-FK -> id_empleado -> empelados(id_empelado)
-FK -> id_tratamiento -> tratamientos(id_tratamiento)
+- FK -> id_cliente -> clientes(id_cliente)
+- FK -> id_empleado -> empelados(id_empleado)
+- FK -> id_tratamiento -> tratamientos(id_tratamiento)
 
 
 
