@@ -1,6 +1,8 @@
-### DATOS DE PRUEBA
+-- DATOS DE PRUEBA
+
+USE munai_estetica;
   
-INSERT INTO clientes (nombre, telefono,email, direccion)
+INSERT INTO clientes (nombre, telefono, email, direccion)
 VALUES 
   ('Jose Alonso', '012345678', 'jose@gmail.com', 'Calle Walabi 42'),
   ('Antonio Bachek','876543210','antonio@gmail.com','Calle Oscura 99'),
@@ -27,7 +29,7 @@ VALUES
   ('2026-06-10','16:00:00','pendiente', 3, 1, 3);
 
 
-### CONSULTA TESTING
+-- CONSULTA DE PRUEBA
   
 SELECT
   clientes.nombre AS cliente,
