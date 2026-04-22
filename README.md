@@ -5,6 +5,7 @@ Proyecto Intermodular 1º DAW - Centro de estética y bienestar "Munai"
 
 La base de datos del proyecto se encuentra documentada en:
 
+- Modelo Relacional en /docs
 - README de la BBDD en /docs/bbdd/README_BBDD.md
 - Diagrama E/R en /diagramas
 - Scripts SQL en /sql
