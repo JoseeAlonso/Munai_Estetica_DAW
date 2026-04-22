@@ -41,10 +41,10 @@ munai_estetica
 
 Tablas principales utilizadas:
 
-clientes
-citas
-empleados
-tratamientos
+- clientes
+- citas
+- empleados
+- tratamientos
 
 La conexión se realiza mediante JDBC en la clase:
 
@@ -52,40 +52,39 @@ com.munai.util.ConexionBD
 
 ## Es necesario configurar:
 
-URL (Distinta URL por uso de localhost; puerto distinto de conexión a BBDD)
-Usuario (Distinto o igual usuario)
-Contraseña (Distinta o igual contraseña)
+- URL (Distinta URL por uso de localhost; puerto distinto de conexión a BBDD)
+- Usuario (Distinto o igual usuario)
+- Contraseña (Distinta o igual contraseña)
 
 Ejemplo:
 
-private static final String URL = "jdbc:mariadb://localhost:3308/munai_estetica";
-private static final String USER = "root";
-private static final String PASS = "";
+- private static final String URL = "jdbc:mariadb://localhost:3308/munai_estetica";
+- private static final String USER = "root";
+- private static final String PASS = "";
 
 ## Ejecución del proyecto
 
-Clonar el repositorio
-Crear la base de datos usando los scripts de la carpeta sql/
-Configurar la conexión en ConexionBD.java
-Ejecutar la clase:
-com.munai.main.Main
+1. Clonar el repositorio
+2. Crear la base de datos usando los scripts de la carpeta sql/
+3. Configurar la conexión en ConexionBD.java
+4. Ejecutar la clase: com.munai.main.Main
 
 ## Estructura del proyecto
 src/
- ├── main/
- │    ├── java/
- │    │     ├── com.munai.main        → Clase principal
- │    │     ├── com.munai.controller  → Controlador del menú
- │    │     ├── com.munai.dao         → Acceso a datos (JDBC)
- │    │     ├── com.munai.model       → Clases del modelo (POO)
- │    │     └── com.munai.util        → Conexión a la base de datos
+ ---main/
+--------java/
+---------------com.munai.main        → Clase principal
+---------------com.munai.controller  → Controlador del menú
+---------------com.munai.dao         → Acceso a datos (JDBC)
+---------------com.munai.model       → Clases del modelo (POO)
+---------------com.munai.util        → Conexión a la base de datos
  
 ## Explicación de capas
-Model → Representa las entidades (Cliente, Cita, etc.)
-DAO → Acceso a la base de datos (consultas SQL)
-Controller → Lógica del menú e interacción con el usuario
-Main → Punto de entrada de la aplicación
-Util → Gestión de conexión JDBC
+- Model → Representa las entidades (Cliente, Cita, etc.)
+- DAO → Acceso a la base de datos (consultas SQL)
+- Controller → Lógica del menú e interacción con el usuario
+- Main → Punto de entrada de la aplicación
+- Util → Gestión de conexión JDBC
 
 ## Operaciones CRUD
 
