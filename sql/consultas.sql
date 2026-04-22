@@ -1,61 +1,89 @@
-#Consultas SQL - Centro de Estética Munai
+# Consultas SQL - Centro de Estética Munai
+
+# Aquí se recogen consultas de prueba para la BBDD de Munai.
+  
 ---
 
 ## 1. Listado de todos los clientes
-  
+
 SELECT * FROM clientes;
 
 ---
 
-##2. Clientes con citas próximas
+## 2. Listado de empleados
 
-SELECT c.nombre, c.telefono, ci.fecha, ci.hora
-FROM clientes c
-JOIN citas ci ON c.id_cliente = ci.id_cliente
-WHERE ci.fecha >= CURDATE()
-ORDER BY ci.fecha, ci.hora;
+SELECT * FROM empleados;
 
 ---
 
-##3. Servicios más reservados
+## 3. Listado de tratamientos disponibles
 
-SELECT s.nombre, COUNT(ci.id_servicio) AS total_reservas
-FROM servicios s
-JOIN citas ci ON s.id_servicio = ci.id_servicio
-GROUP BY s.nombre
-ORDER BY total_reservas DESC;
+SELECT nombre, precio, duracion
+FROM tratamientos;
 
 ---
 
-##4. Ingresos totales del negocio
+## 4. Listado completo de citas
 
-SELECT SUM(p.monto) AS ingresos_totales
-FROM pagos p;
-
----
-
-##5. Citas de un cliente específico
-
-SELECT c.nombre, s.nombre AS servicio, ci.fecha, ci.hora
+SELECT
+  c.nombre AS cliente,
+  t.nombre AS tratamiento,
+  e.nombre AS empleado,
+  ci.fecha,
+  ci.hora,
+  ci.estado
 FROM citas ci
 JOIN clientes c ON ci.id_cliente = c.id_cliente
-JOIN servicios s ON ci.id_servicio = s.id_servicio
-WHERE c.id_cliente = 1;
+JOIN empleados e ON ci.id_empleado = e.id_empleado
+JOIN tratamientos t ON ci.id_tratamiento = t.id_tratamiento;
 
 ---
 
-##6. Número de citas por empleado
+## 5. Número de citas por empleado
 
-SELECT e.nombre, COUNT(ci.id_cita) AS total_citas
+SELECT
+  e.nombre,
+  COUNT(ci.id_cita) AS total_citas
 FROM empleados e
 LEFT JOIN citas ci ON e.id_empleado = ci.id_empleado
 GROUP BY e.nombre;
 
 ---
 
-##7. Horario de un empleado
+## 6. Número de citas por tratamiento
 
-SELECT e.nombre, ci.fecha, ci.hora
+SELECT
+  t.nombre,
+  COUNT(ci.id_cita) AS total_citas
+FROM tratamientos t
+LEFT JOIN citas ci ON t.id_tratamiento = ci.id_tratamiento
+GROUP BY t.nombre
+ORDER BY total_citas DESC;
+
+---
+
+## 7. Citas de un cliente específico
+
+SELECT
+  c.nombre,
+  t.nombre AS tratamiento,
+  ci.fecha,
+  ci.hora,
+  ci.estado
+FROM citas ci
+JOIN clientes c ON ci.id_cliente = c.id_cliente
+JOIN tratamientos t ON ci.id_tratamiento = t.id_tratamiento
+WHERE c.id_cliente = 1;
+
+---
+
+## 8. Horario de un empleado
+
+SELECT
+  e.nombre,
+  ci.fecha,
+  ci.hora,
+  ci.estado
 FROM citas ci
 JOIN empleados e ON ci.id_empleado = e.id_empleado
 WHERE e.id_empleado = 1
@@ -63,27 +91,32 @@ ORDER BY ci.fecha, ci.hora;
 
 ---
 
-##8. Clientes que más han gastado
+## 9. Número de citas por día
 
-SELECT c.nombre, SUM(p.monto) AS total_gastado
-FROM clientes c
-JOIN pagos p ON c.id_cliente = p.id_cliente
-GROUP BY c.nombre
-ORDER BY total_gastado DESC;
-
----
-
-##9. Número de citas por día
-
-SELECT fecha, COUNT(*) AS total_citas
+SELECT
+  fecha,
+  COUNT(*) AS total_citas
 FROM citas
 GROUP BY fecha
 ORDER BY fecha;
 
 ---
 
-##10. Servicios con su precio y duración
+## 10. Citas pendientes
 
-SELECT nombre, precio, duracion
-FROM servicios;
+SELECT
+  c.nombre AS cliente,
+  ci.fecha,
+  ci.hora
+FROM citas ci
+JOIN clientes c ON ci.id_cliente = c.id_cliente
+WHERE ci.estado = 'pendiente';
 
+---
+
+## 11. Ingresos potenciales por citas
+
+SELECT
+  SUM(t.precio) AS ingresos_estimados
+FROM citas ci
+JOIN tratamientos t ON ci.id_tratamiento = t.id_tratamiento;
