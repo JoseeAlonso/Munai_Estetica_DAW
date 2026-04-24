@@ -40,7 +40,7 @@ La capa Service se encarga de:
 - Control de formatos de fecha y hora
 - Prevención de citas duplicadas
 
-## Diagrama de clases (simplificado)
+## Diagrama simple de clases 
 
 - MenuController → ClienteService, CitaService, EmpleadoService, TratamientoService  
 - Services → DAOs correspondientes  
