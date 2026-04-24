@@ -26,9 +26,9 @@ Contar el número total de citas
 Filtrar citas por cliente
 Ordenar citas por fecha
 
-## Validaciones implementadas
+## Validaciones implementadas en la capa Service
 
-Comprobación de existencia de cliente, empleado y tratamiento
+Comprobación de existencia de cliente, empleado y tratamiento (entidades)
 Validación de formato de fecha (YYYY-MM-DD) (Año-Mes-Día)
 Validación de formato de hora (HH:MM) (Horas:Minutos)
 Prevención de citas duplicadas (misma fecha, hora y empleado)
@@ -73,24 +73,34 @@ Ejemplo:
 src/
  ---main/
 --------java/
----------------com.munai.main        → Clase principal
----------------com.munai.controller  → Controlador del menú
----------------com.munai.dao         → Acceso a datos (JDBC)
----------------com.munai.model       → Clases del modelo (POO)
----------------com.munai.util        → Conexión a la base de datos
+---------------com.munai.main        -> Clase principal
+---------------com.munai.controller  -> Controlador del menú
+---------------com.munai.service     -> Lógica de negocio y validaciones
+---------------com.munai.dao         -> Acceso a datos (JDBC)
+---------------com.munai.model       -> Clases del modelo (POO)
+---------------com.munai.util        -> Conexión a la base de datos
  
 ## Explicación de capas
-- Model → Representa las entidades (Cliente, Cita, etc.)
-- DAO → Acceso a la base de datos (consultas SQL)
-- Controller → Lógica del menú e interacción con el usuario
-- Main → Punto de entrada de la aplicación
-- Util → Gestión de conexión JDBC
+- Model -> Representa las entidades (Cliente, Cita, etc.)
+- DAO -> Acceso a la base de datos (consultas SQL)
+- Controller-> Interacción con el usuario (menú por consola)
+- Service -> Lógica de negocio y validaciones
+- Main -> Punto de entrada de la aplicación
+- Util -> Gestión de conexión JDBC
 
 ## Operaciones CRUD
 
 La aplicación implementa operaciones reales sobre la base de datos:
 
-Create → Insertar clientes y citas
-Read → Consultar clientes y citas
-Filter/Search → Filtrar citas por cliente
-Extra → Conteo y ordenación de datos
+Create -> Insertar clientes y citas
+Read -> Consultar clientes y citas
+Filter/Search -> Filtrar citas por cliente
+Extra -> Conteo y ordenación de datos
+
+## Arquitectura 
+
+El proyecto está desarrollado mediante una arquitectura por capas:
+
+Controller -> Service -> DAO -> Base de Datos
+
+Esto permite aislar las responsabilidades, mejorando la mantenibilidad y facilitando futuras ampliaciones.
