@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservar Cita — Munai Clínica Estética</title>
+    <meta
+      name="description"
+      content="Reserva tu cita en Munai. Elige tu tratamiento, profesional y horario preferido. Primera consulta personalizada sin compromiso."
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/botones.css">
+    <link rel="stylesheet" href="./css/hero-pagina.css">
+    <link rel="stylesheet" href="./css/formularios.css">
+    <link rel="stylesheet" href="./css/citas.css">
+    <link rel="icon" type="image/png" href="./assets/Logo munai.png">
+  </head>
+  <body>
+    <!-- CABECERA -->
+    <header>
+      <nav>
+        <a href="index.html" class="logo">
+          Munai
+          <span>Clínica Estética & Bienestar</span>
+        </a>
+
+        <button
+          class="hamburger"
+          onclick="this.nextElementSibling.classList.toggle('abierto')"
+          aria-label="Abrir menú"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="citas.html" class="activo">Reservar cita</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="citas.html" class="btn-nav">Reservar ahora</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO PÁGINA -->
+      <section class="hero-pagina">
+        <div class="contenedor">
+          <nav class="migas" aria-label="Ruta de navegación">
+            <a href="index.html">Inicio</a>
+            <span>/</span>
+            <span>Reservar cita</span>
+          </nav>
+          <h1 class="animar">Reserva tu <em>cita</em></h1>
+          <p class="animar retraso-1">
+            Completa el formulario y nos pondremos en contacto contigo para
+            confirmar tu cita en un plazo máximo de 24 horas.
+          </p>
+        </div>
+      </section>
+
+      <!-- FORMULARIO + SIDEBAR -->
+      <section class="pagina-citas">
+        <div class="contenedor">
+          <div class="layout-citas">
+            <!-- FORMULARIO -->
+            <div class="formulario-wrap animar">
+              <h2>Solicitud de <em>reserva</em></h2>
+
+              <form action="#" method="post" novalidate>
+                <!-- PASO 1: Datos personales -->
+                <div class="seccion-form">
+                  <div class="titulo-seccion-form">
+                    <span class="num-paso">1</span>
+                    Tus datos personales
+                  </div>
+
+                  <div class="fila-form">
+                    <div class="grupo-campo">
+                      <label for="nombre">Nombre completo *</label>
+                      <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ej. Laura García"
+                        required
+                      />
+                    </div>
+                    <div class="grupo-campo">
+                      <label for="telefono">Teléfono *</label>
+                      <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="600 123 456"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="fila-form">
+                    <div class="grupo-campo">
+                      <label for="email">Correo electrónico *</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="tucorreo@email.com"
+                        required
+                      />
+                    </div>
+                    <div class="grupo-campo">
+                      <label for="direccion">Dirección (opcional)</label>
+                      <input
+                        type="text"
+                        id="direccion"
+                        name="direccion"
+                        placeholder="Calle, número, ciudad"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- PASO 2: Tratamiento -->
+                <div class="seccion-form">
+                  <div class="titulo-seccion-form">
+                    <span class="num-paso">2</span>
+                    Elige tu tratamiento
+                  </div>
+
+                  <div class="grupo-campo">
+                    <label for="categoria">Categoría *</label>
+                    <select id="categoria" name="categoria" required>
+                      <option value="" disabled selected>
+                        Selecciona una categoría
+                      </option>
+                      <option value="facial">🌿 Tratamientos Faciales</option>
+                      <option value="corporal">
+                        💆 Tratamientos Corporales
+                      </option>
+                      <option value="fisioterapia">⚡ Fisioterapia</option>
+                      <option value="depilacion">🌸 Depilación</option>
+                      <option value="manicura">💅 Manicura & Pedicura</option>
+                      <option value="ritual">✨ Rituales de Bienestar</option>
+                    </select>
+                  </div>
+
+                  <div class="grupo-campo">
+                    <label for="tratamiento">Tratamiento *</label>
+                    <select id="tratamiento" name="tratamiento" required>
+                      <option value="" disabled selected>
+                        Selecciona el tratamiento
+                      </option>
+                      <optgroup label="🌿 Faciales">
+                        <option value="hidratacion">
+                          Hidratación Profunda — 55 €
+                        </option>
+                        <option value="limpieza">
+                          Limpieza Facial Profunda — 45 €
+                        </option>
+                        <option value="antiaging">
+                          Tratamiento Anti-aging — 80 €
+                        </option>
+                        <option value="peeling">Peeling Químico — 65 €</option>
+                        <option value="mesoterapia">
+                          Mesoterapia Facial — 90 €
+                        </option>
+                        <option value="antimanchas">
+                          Tratamiento Antimanchas — 70 €
+                        </option>
+                        <option value="lifting">
+                          Lifting sin Bisturí — 95 €
+                        </option>
+                        <option value="ojeras">
+                          Tratamiento para Ojeras — 40 €
+                        </option>
+                      </optgroup>
+                      <optgroup label="💆 Corporales">
+                        <option value="masaje-relajante">
+                          Masaje Relajante — 65 €
+                        </option>
+                        <option value="piedras">
+                          Masaje con Piedras Volcánicas — 75 €
+                        </option>
+                        <option value="drenaje">
+                          Drenaje Linfático — 60 €
+                        </option>
+                        <option value="envoltura">
+                          Envoltura Reductora — 70 €
+                        </option>
+                        <option value="presoterapia">
+                          Presoterapia — 35 €
+                        </option>
+                        <option value="exfoliacion">
+                          Exfoliación Corporal — 45 €
+                        </option>
+                      </optgroup>
+                      <optgroup label="⚡ Fisioterapia">
+                        <option value="fisio-general">
+                          Fisioterapia General — 55 €
+                        </option>
+                        <option value="neuromuscular">
+                          Terapia Neuromuscular — 70 €
+                        </option>
+                        <option value="puncion">Punción Seca — 60 €</option>
+                        <option value="electroterapia">
+                          Electroterapia — 40 €
+                        </option>
+                        <option value="kinesio">Kinesiotaping — 25 €</option>
+                      </optgroup>
+                      <optgroup label="🌸 Depilación">
+                        <option value="dep-piernas">
+                          Depilación Piernas Completas — 35 €
+                        </option>
+                        <option value="dep-axilas">
+                          Depilación Axilas — 12 €
+                        </option>
+                        <option value="dep-brasilena">
+                          Depilación Brasileña — 30 €
+                        </option>
+                        <option value="dep-facial">
+                          Depilación Facial — 18 €
+                        </option>
+                        <option value="dep-espalda">
+                          Depilación Espalda (Hombre) — 40 €
+                        </option>
+                      </optgroup>
+                      <optgroup label="💅 Manicura & Pedicura">
+                        <option value="manicura">
+                          Manicura Completa — 22 €
+                        </option>
+                        <option value="manicura-semi">
+                          Manicura Semipermanente — 30 €
+                        </option>
+                        <option value="pedicura">
+                          Pedicura Completa — 30 €
+                        </option>
+                        <option value="pedicura-med">
+                          Pedicura Medicinal — 38 €
+                        </option>
+                      </optgroup>
+                      <optgroup label="✨ Rituales">
+                        <option value="ritual-munai">
+                          Ritual Munai Completo — 150 €
+                        </option>
+                        <option value="ritual-detox">
+                          Ritual Detox & Relax — 110 €
+                        </option>
+                        <option value="ritual-antiaging">
+                          Ritual Anti-aging Intensivo — 180 €
+                        </option>
+                      </optgroup>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- PASO 3: Profesional -->
+                <div class="seccion-form">
+                  <div class="titulo-seccion-form">
+                    <span class="num-paso">3</span>
+                    Profesional de tu preferencia
+                  </div>
+
+                  <div class="grupo-campo">
+                    <label for="empleado">Especialista</label>
+                    <select id="empleado" name="empleado">
+                      <option value="">
+                        Sin preferencia (asignación automática)
+                      </option>
+                      <option value="laura">
+                        Laura Gómez — Esteticista & Directora
+                      </option>
+                      <option value="sofia">
+                        Sofía Martínez — Fisioterapeuta
+                      </option>
+                      <option value="carmen">
+                        Carmen López — Esteticista Corporal
+                      </option>
+                      <option value="ana">
+                        Ana Torres — Estética Avanzada
+                      </option>
+                    </select>
+                    <span class="ayuda"
+                      >Si no tienes preferencia, asignaremos al especialista más
+                      adecuado para tu tratamiento.</span
+                    >
+                  </div>
+                </div>
+
+                <!-- PASO 4: Fecha y hora -->
+                <div class="seccion-form">
+                  <div class="titulo-seccion-form">
+                    <span class="num-paso">4</span>
+                    Fecha y hora deseada
+                  </div>
+
+                  <div class="fila-form">
+                    <div class="grupo-campo">
+                      <label for="fecha">Fecha *</label>
+                      <input type="date" id="fecha" name="fecha" required />
+                    </div>
+                    <div class="grupo-campo">
+                      <label for="hora">Hora *</label>
+                      <select id="hora" name="hora" required>
+                        <option value="" disabled selected>
+                          Selecciona una hora
+                        </option>
+                        <optgroup label="Mañana">
+                          <option value="09:00">09:00 h</option>
+                          <option value="09:30">09:30 h</option>
+                          <option value="10:00">10:00 h</option>
+                          <option value="10:30">10:30 h</option>
+                          <option value="11:00">11:00 h</option>
+                          <option value="11:30">11:30 h</option>
+                          <option value="12:00">12:00 h</option>
+                          <option value="12:30">12:30 h</option>
+                          <option value="13:00">13:00 h</option>
+                        </optgroup>
+                        <optgroup label="Tarde">
+                          <option value="15:00">15:00 h</option>
+                          <option value="15:30">15:30 h</option>
+                          <option value="16:00">16:00 h</option>
+                          <option value="16:30">16:30 h</option>
+                          <option value="17:00">17:00 h</option>
+                          <option value="17:30">17:30 h</option>
+                          <option value="18:00">18:00 h</option>
+                          <option value="18:30">18:30 h</option>
+                          <option value="19:00">19:00 h</option>
+                          <option value="19:30">19:30 h</option>
+                        </optgroup>
+                        <optgroup label="Sábado (10:00–14:30)">
+                          <option value="10:00-sab">10:00 h</option>
+                          <option value="10:30-sab">10:30 h</option>
+                          <option value="11:00-sab">11:00 h</option>
+                          <option value="11:30-sab">11:30 h</option>
+                          <option value="12:00-sab">12:00 h</option>
+                          <option value="13:00-sab">13:00 h</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="grupo-campo">
+                    <label for="estado">Estado de la solicitud</label>
+                    <select id="estado" name="estado" disabled>
+                      <option value="pendiente" selected>
+                        Pendiente de confirmación
+                      </option>
+                    </select>
+                    <span class="ayuda"
+                      >Tu cita quedará pendiente hasta que el equipo la
+                      confirme. Recibirás respuesta en menos de 24 h.</span
+                    >
+                  </div>
+                </div>
+
+                <!-- PASO 5: Notas y consentimiento -->
+                <div class="seccion-form">
+                  <div class="titulo-seccion-form">
+                    <span class="num-paso">5</span>
+                    Información adicional
+                  </div>
+
+                  <div class="grupo-campo">
+                    <label for="notas">Notas o comentarios</label>
+                    <textarea
+                      id="notas"
+                      name="notas"
+                      placeholder="Cuéntanos si tienes alguna alergia, lesión previa, preferencia especial o cualquier información que debamos conocer..."
+                    ></textarea>
+                  </div>
+
+                  <div class="consentimiento">
+                    <input
+                      type="checkbox"
+                      id="privacidad"
+                      name="privacidad"
+                      required
+                    />
+                    <label for="privacidad">
+                      He leído y acepto la
+                      <a
+                        href="contacto.html#privacidad"
+                        style="color: #3f5220; text-decoration: underline"
+                        >Política de Privacidad</a
+                      >
+                      de Munai. Consiento el tratamiento de mis datos para
+                      gestionar mi cita. *
+                    </label>
+                  </div>
+
+                  <div class="consentimiento">
+                    <input
+                      type="checkbox"
+                      id="comunicaciones"
+                      name="comunicaciones"
+                    />
+                    <label for="comunicaciones">
+                      Acepto recibir comunicaciones sobre promociones y
+                      novedades de Munai.
+                    </label>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                  Solicitar reserva
+                </button>
+                <p class="ayuda texto-centro" style="margin-top: 12px">
+                  Los campos con * son obligatorios. Confirmaremos tu cita en
+                  menos de 24 h.
+                </p>
+              </form>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar-citas animar retraso-2">
+              <!-- Cómo funciona -->
+              <div class="tarjeta-info">
+                <h3>¿Cómo funciona?</h3>
+
+                <div class="paso-info">
+                  <div class="paso-icono">📝</div>
+                  <div>
+                    <span class="etiqueta">Paso 1</span>
+                    <span class="valor"
+                      >Rellena el formulario con tus datos y el tratamiento
+                      deseado.</span
+                    >
+                  </div>
+                </div>
+
+                <div class="paso-info">
+                  <div class="paso-icono">📞</div>
+                  <div>
+                    <span class="etiqueta">Paso 2</span>
+                    <span class="valor"
+                      >Nuestro equipo te contactará en menos de 24 h para
+                      confirmar disponibilidad.</span
+                    >
+                  </div>
+                </div>
+
+                <div class="paso-info">
+                  <div class="paso-icono">✅</div>
+                  <div>
+                    <span class="etiqueta">Paso 3</span>
+                    <span class="valor"
+                      >¡Cita confirmada! Recibirás un recordatorio 24 h antes de
+                      tu visita.</span
+                    >
+                  </div>
+                </div>
+
+                <div class="paso-info">
+                  <div class="paso-icono">🌿</div>
+                  <div>
+                    <span class="etiqueta">Paso 4</span>
+                    <span class="valor"
+                      >Disfruta de tu tratamiento y sal renovada de Munai.</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Horarios -->
+              <div class="tarjeta-info">
+                <h3>Horario de atención</h3>
+                <div class="fila-horario">
+                  <span class="dia">Lunes – Viernes</span>
+                  <span class="hora">09:00 – 20:00</span>
+                </div>
+                <div class="fila-horario">
+                  <span class="dia">Sábado</span>
+                  <span class="hora">10:00 – 15:00</span>
+                </div>
+                <div class="fila-horario cerrado">
+                  <span class="dia">Domingo</span>
+                  <span class="hora">Cerrado</span>
+                </div>
+              </div>
+
+              <!-- Llamar -->
+              <div class="tarjeta-info tarjeta-oscura">
+                <h3>¿Prefieres llamar?</h3>
+                <p>
+                  Si lo prefieres, puedes reservar tu cita directamente por
+                  teléfono o WhatsApp. Estaremos encantadas de atenderte.
+                </p>
+                <div class="botones-contacto">
+                  <a
+                    href="tel:+34912345678"
+                    class="btn-primario"
+                    style="text-align: center"
+                    >📞 +34 912 345 678</a
+                  >
+                  <a
+                    href="https://wa.me/34912345678"
+                    class="btn-secundario"
+                    style="text-align: center"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >💬 WhatsApp</a
+                  >
+                </div>
+              </div>
+
+              <!-- Cancelaciones -->
+              <div class="tarjeta-info">
+                <h3>Política de cancelación</h3>
+                <p style="font-size: 14px; color: #6b7d52; line-height: 1.7">
+                  Puedes cancelar o modificar tu cita hasta
+                  <strong style="color: #222e14">24 horas antes</strong>
+                  sin ningún coste. Las cancelaciones tardías o ausencias sin
+                  aviso podrán suponer un cargo del 50% del tratamiento
+                  reservado.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <div class="contenedor">
+        <div class="footer-grid">
+          <div class="footer-marca">
+            <span class="footer-nombre">Munai</span>
+            <div class="footer-linea"></div>
+            <p>
+              Clínica estética y bienestar donde la belleza y la salud se unen
+              para transformar tu calidad de vida.
+            </p>
+            <div class="footer-redes">
+              <a href="#" class="red-social" aria-label="Instagram">📷</a>
+              <a href="#" class="red-social" aria-label="Facebook">📘</a>
+              <a href="#" class="red-social" aria-label="WhatsApp">💬</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-titulo">Navegación</h3>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="servicios.html">Tratamientos</a></li>
+              <li><a href="citas.html">Reservar cita</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-titulo">Contacto</h3>
+            <div class="footer-contacto">
+              <div class="footer-dato">
+                <span class="footer-icono">📍</span>
+                <span>Calle Bienestar, 12 · Madrid</span>
+              </div>
+              <div class="footer-dato">
+                <span class="footer-icono">📞</span>
+                <a href="tel:+34912345678">+34 123 123 123</a>
+              </div>
+              <div class="footer-dato">
+                <span class="footer-icono">✉️</span>
+                <a href="mailto:hola@munai.es">hola@munai.es</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Munai Clínica Estética &amp; Bienestar · Todos los
+            derechos reservados
+          </p>
+          <p>Proyecto DAW 1º · Lenguajes de Marcas</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

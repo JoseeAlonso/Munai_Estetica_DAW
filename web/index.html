@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Munai — Clínica Estética y Bienestar</title>
+    <meta
+      name="description"
+      content="Munai es una clínica estética premium en Madrid (ficticia) especializada en tratamientos faciales, corporales, fisioterapia y bienestar integral."
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/botones.css" />
+    <link rel="stylesheet" href="./css/inicio.css" />
+    <link rel="icon" type="image/png" href="./assets/Logo munai.png">
+  </head>
+  <body>
+    <!-- CABECERA -->
+    <header>
+      <nav>
+        <a href="index.html" class="logo">
+          Munai
+          <span>Clínica Estética & Bienestar</span>
+        </a>
+
+        <!--Este botón tiene JS para crear el desplegable cuando la pantalla tiene un ancho determinado. Acopla los elementos en la "hamburguesa" y los muestra si haces click en él (navbar)-->
+        <button
+          class="hamburger"
+          onclick="this.nextElementSibling.classList.toggle('abierto')"
+          aria-label="Abrir menú"
+        >
+          <!--Estos span conforman la "hamburger". .hamburger span. Les da tamaño color y disposición-->
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul>
+          <li><a href="index.html" class="activo">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="citas.html">Reservar cita</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="citas.html" class="btn-nav">Reservar ahora</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-contenido animar">
+          <span class="hero-etiqueta">Clínica Estética - Madrid</span>
+          <h1>Tu bienestar,<br /><em>nuestra pasión</em></h1>
+          <p>
+            En Munai combinamos la ciencia estética y muscular con el arte del
+            cuidado personal. Tratamientos profesionales diseñados para realzar
+            tu belleza natural y mejorar tu calidad de vida.
+          </p>
+          <div class="hero-botones">
+            <a href="citas.html" class="btn-primario">Reservar cita</a>
+            <a href="servicios.html" class="btn-secundario">Ver tratamientos</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE NOSOTROS -->
+      <section class="sobre-nosotros">
+        <div class="contenedor">
+          <div class="sobre-grid">
+            <div class="sobre-imagen animar-izq">
+              <div
+                class="placeholder-img"
+                role="img"
+                aria-label="Interior del centro Munai"
+              >
+                <img
+                  src="./assets/recepcion munai.png"
+                  alt="recepción con plantas, cascada y zona de espera"
+                />
+              </div>
+            </div>
+
+            <div class="sobre-texto animar">
+              <span class="subtitulo-seccion">Nuestra historia</span>
+              <h2 class="titulo-seccion">
+                Nace de una <em>necesidad real</em>
+              </h2>
+              <div class="linea"></div>
+
+              <p>
+                Munai nació de la convicción de que el cuidado personal es un
+                derecho y una necesidad, no un lujo. Fundado por una esteticista
+                y fisioterapeuta titulada, nuestro centro surge del deseo de
+                ofrecer tratamientos de alta calidad en un entorno cercano y
+                profesional.
+              </p>
+              <p>
+                Todo empezó con una necesidad de crecer, emprender y mejorar la
+                calidad de vida de las personas. Hoy, con un equipo de solamente
+                dos especialistas, seguimos fieles a esa misión cada día.
+              </p>
+
+              <div class="valores-lista">
+                <div class="valor-item">
+                  <div class="valor-icono">✦</div>
+                  <div class="valor-texto">
+                    <strong>Excelencia profesional</strong>
+                    <p>
+                      Formación continua y técnicas contrastadas con los mejores
+                      protocolos.
+                    </p>
+                  </div>
+                </div>
+                <div class="valor-item">
+                  <div class="valor-icono">✦</div>
+                  <div class="valor-texto">
+                    <strong>Trato personalizado</strong>
+                    <p>
+                      Cada cliente recibe un diagnóstico y plan de tratamiento
+                      únicos.
+                    </p>
+                  </div>
+                </div>
+                <div class="valor-item">
+                  <div class="valor-icono">✦</div>
+                  <div class="valor-texto">
+                    <strong>Bienestar integral</strong>
+                    <p>
+                      Unimos estética y fisioterapia para un cuidado holístico.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="estadisticas">
+                <div class="estadistica">
+                  <span class="estadistica-numero">500+</span>
+                  <span class="estadistica-label">Clientes satisfechos</span>
+                </div>
+                <div class="estadistica">
+                  <span class="estadistica-numero">30+</span>
+                  <span class="estadistica-label">Tratamientos</span>
+                </div>
+                <div class="estadistica">
+                  <span class="estadistica-numero">4</span>
+                  <span class="estadistica-label">Especialistas</span>
+                </div>
+              </div>
+
+              <a
+                href="servicios.html"
+                class="btn-verde"
+                style="margin-top: 24px; display: inline-block"
+              >
+                Conocer nuestros servicios
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICIOS DESTACADOS -->
+      <section class="servicios-home">
+        <div class="contenedor texto-centro">
+          <span class="subtitulo-seccion">Tratamientos</span>
+          <h2 class="titulo-seccion">Servicios <em>especializados</em></h2>
+          <div class="linea linea-centro"></div>
+          <p class="descripcion descripcion-centro">
+            Una selección de nuestros tratamientos más demandados, diseñados
+            para responder a tus necesidades con la máxima eficacia y confort.
+          </p>
+
+          <div class="tarjetas-grid">
+            <article class="tarjeta-servicio animar retraso-1">
+              <div class="tarjeta-cabecera">🌿</div>
+              <div class="tarjeta-cuerpo">
+                <span class="tarjeta-categoria">Facial</span>
+                <h3>Hidratación Profunda</h3>
+                <p>
+                  Tratamiento intensivo con ácido hialurónico y vitamina C.
+                  Restaura la luminosidad y elasticidad cutánea desde la primera
+                  sesión.
+                </p>
+                <div class="tarjeta-pie">
+                  <span class="precio">55 €</span>
+                  <span class="duracion">⏱ 60 min</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="tarjeta-servicio animar retraso-2">
+              <div class="tarjeta-cabecera">💆</div>
+              <div class="tarjeta-cuerpo">
+                <span class="tarjeta-categoria">Corporal</span>
+                <h3>Masaje Relajante</h3>
+                <p>
+                  Técnica sueca de relajación profunda que libera tensiones
+                  musculares y aporta una sensación de bienestar integral.
+                </p>
+                <div class="tarjeta-pie">
+                  <span class="precio">65 €</span>
+                  <span class="duracion">⏱ 75 min</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="tarjeta-servicio animar retraso-3">
+              <div class="tarjeta-cabecera">⚡</div>
+              <div class="tarjeta-cuerpo">
+                <span class="tarjeta-categoria">Fisioterapia</span>
+                <h3>Terapia Neuromuscular</h3>
+                <p>
+                  Tratamiento especializado para contracturas y dolor muscular
+                  crónico con técnicas manuales avanzadas.
+                </p>
+                <div class="tarjeta-pie">
+                  <span class="precio">70 €</span>
+                  <span class="duracion">⏱ 60 min</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <a
+            href="servicios.html"
+            class="btn-verde"
+            style="margin-top: 40px; display: inline-block"
+          >
+            Ver todos los tratamientos
+          </a>
+        </div>
+      </section>
+
+      <!-- EQUIPO -->
+      <section class="equipo">
+        <div class="contenedor texto-centro">
+          <span class="subtitulo-seccion">Profesionales</span>
+          <h2 class="titulo-seccion">Nuestro <em>equipo</em></h2>
+          <div class="linea linea-centro"></div>
+          <p class="descripcion descripcion-centro">
+            Especialistas titulados y comprometidos con tu bienestar.
+          </p>
+
+          <div class="equipo-grid">
+            <article class="tarjeta-equipo animar retraso-1">
+              <div class="foto-equipo">
+                <img
+                  src="./assets/Persona ficticia 1.png"
+                  alt="Adriana Dos Santos, esteticista, fisioterapeuta profesional y fundadora de Munai"
+                />
+                AD
+              </div>
+              <h3 class="nombre-empleado">Adriana Dos Santos</h3>
+              <p class="rol-empleado">Esteticista - Fisioterapeuta</p>
+            </article>
+
+            <article class="tarjeta-equipo animar retraso-2">
+              <div class="foto-equipo">
+                <img
+                  src="./assets/Persona ficticia 2.png"
+                  alt="Roberto Gómez, fisioterapeuta, esteticista"
+                />
+                RG
+              </div>
+              <h3 class="nombre-empleado">Roberto Gómez</h3>
+              <p class="rol-empleado">Fisioterapeuta - Esteticista</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIOS -->
+      <section class="testimonios">
+        <div class="contenedor texto-centro">
+          <span class="subtitulo-seccion">Opiniones</span>
+          <h2 class="titulo-seccion">
+            Lo que dicen <em>nuestras clientas</em>
+          </h2>
+          <div class="linea linea-centro"></div>
+
+          <div class="testimonios-grid">
+            <!--tarjetas de testimonios-->
+            <blockquote class="tarjeta-testimonio">
+              <span class="comilla" aria-hidden="true">"</span>
+              <p class="texto-testimonio">
+                Llevo más de un año viniendo a Munai y cada visita es una
+                experiencia increíble. Los tratamientos faciales han mejorado
+                muchísimo mi piel. El equipo es siempre atento y muy
+                profesional.
+              </p>
+              <footer class="autor-testimonio">
+                <div class="avatar">MR</div>
+                <div>
+                  <cite class="nombre-autor">María Rodríguez</cite>
+                  <div class="estrellas">★★★★★</div>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="tarjeta-testimonio">
+              <span class="comilla" aria-hidden="true">"</span>
+              <p class="texto-testimonio">
+                Me recomendaron Munai para tratar una contractura que llevaba
+                meses molestándome. La fisioterapeuta fue excepcional. En tres
+                sesiones noté una mejora enorme. 100% recomendable.
+              </p>
+              <footer class="autor-testimonio">
+                <div class="avatar">JP</div>
+                <div>
+                  <cite class="nombre-autor">Javier Pérez</cite>
+                  <div class="estrellas">★★★★★</div>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="tarjeta-testimonio">
+              <span class="comilla" aria-hidden="true">"</span>
+              <p class="texto-testimonio">
+                El ambiente es precioso y muy relajante. Me hice el ritual
+                completo y salí como nueva. Los precios son muy justos para la
+                calidad que ofrecen. Volvería siempre.
+              </p>
+              <footer class="autor-testimonio">
+                <div class="avatar">ES</div>
+                <div>
+                  <cite class="nombre-autor">Elena Sánchez</cite>
+                  <div class="estrellas">★★★★★</div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- BANNER CTA -->
+      <section class="banner-cta">
+        <div class="contenedor">
+          <h2>Empieza tu <em>transformación</em> hoy</h2>
+          <p>
+            Reserva tu primera consulta sin compromiso. Nuestro equipo diseñará
+            un plan de tratamiento completamente personalizado para ti.
+          </p>
+          <div class="banner-botones">
+            <a href="citas.html" class="btn-primario">Pedir cita online</a>
+            <a href="contacto.html" class="btn-secundario">Contactar</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <div class="contenedor">
+        <div class="footer-grid">
+          <div class="footer-marca">
+            <span class="footer-nombre">Munai</span>
+            <div class="footer-linea"></div>
+            <p>
+              Clínica estética y bienestar donde la belleza y la salud se unen
+              para transformar tu calidad de vida.
+            </p>
+            <div class="footer-redes">
+              <a href="#" class="red-social" aria-label="Instagram">📷</a>
+              <a href="#" class="red-social" aria-label="Facebook">📘</a>
+              <a href="#" class="red-social" aria-label="WhatsApp">💬</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-titulo">Navegación</h3>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="servicios.html">Tratamientos</a></li>
+              <li><a href="citas.html">Reservar cita</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-titulo">Contacto</h3>
+            <div class="footer-contacto">
+              <div class="footer-dato">
+                <span class="footer-icono">📍</span>
+                <span>Calle Bienestar, 12 - Madrid</span>
+              </div>
+              <div class="footer-dato">
+                <span class="footer-icono">📞</span>
+                <a href="tel:+34912345678">+34 123 123 123</a>
+              </div>
+              <div class="footer-dato">
+                <span class="footer-icono">✉️</span>
+                <a href="mailto:hola@munai.es">hola@munai.es</a>
+              </div>
+              <div class="footer-dato">
+                <span class="footer-icono">🕐</span>
+                <span>Lun–Vie 9:00–20:00 · Sáb 10:00–15:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Munai Clínica Estética & Bienestar - Todos los derechos
+            reservados
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

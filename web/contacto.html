@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto — Munai Clínica Estética</title>
+    <meta
+      name="description"
+      content="Contacta con Munai Clínica Estética en Madrid. Teléfono, email, horarios y formulario de contacto."
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/botones.css">
+    <link rel="stylesheet" href="./css/hero-pagina.css">
+    <link rel="stylesheet" href="./css/formularios.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="icon" type="image/png" href="./assets/Logo munai.png">
+  </head>
+  <body>
+    <!-- CABECERA -->
+    <header>
+      <nav>
+        <a href="index.html" class="logo">
+          Munai
+          <span>Clínica Estética & Bienestar</span>
+        </a>
+
+        <button
+          class="hamburger"
+          onclick="this.nextElementSibling.classList.toggle('abierto')"
+          aria-label="Abrir menú"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="citas.html">Reservar cita</a></li>
+          <li><a href="contacto.html" class="activo">Contacto</a></li>
+          <li><a href="citas.html" class="btn-nav">Reservar ahora</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO PÁGINA -->
+      <section class="hero-pagina">
+        <div class="contenedor">
+          <nav class="migas" aria-label="Ruta de navegación">
+            <a href="index.html">Inicio</a>
+            <span>/</span>
+            <span>Contacto</span>
+          </nav>
+          <h1 class="animar">Estamos aquí <em>para ti</em></h1>
+          <p class="animar retraso-1">
+            ¿Tienes alguna pregunta o quieres más información? Escríbenos o
+            llámanos, estaremos encantadas de ayudarte.
+          </p>
+        </div>
+      </section>
+
+      <!-- FORMULARIO + SIDEBAR -->
+      <section class="pagina-contacto">
+        <div class="contenedor">
+          <div class="layout-contacto">
+            <!-- FORMULARIO -->
+            <div class="formulario-contacto-wrap animar">
+              <span class="subtitulo-seccion">Escríbenos</span>
+              <h2 class="titulo-seccion">Envíanos un <em>mensaje</em></h2>
+              <div class="linea"></div>
+              <p class="descripcion" style="margin-bottom: 32px">
+                Responderemos tu consulta en un plazo máximo de 24 horas en días
+                laborables.
+              </p>
+
+              <form action="#" method="post" novalidate>
+                <div class="fila-form">
+                  <div class="grupo-campo">
+                    <label for="nombre">Nombre *</label>
+                    <input
+                      type="text"
+                      id="nombre"
+                      name="nombre"
+                      placeholder="Tu nombre"
+                      required
+                    />
+                  </div>
+                  <div class="grupo-campo">
+                    <label for="apellidos">Apellidos</label>
+                    <input
+                      type="text"
+                      id="apellidos"
+                      name="apellidos"
+                      placeholder="Tus apellidos"
+                    />
+                  </div>
+                </div>
+
+                <div class="fila-form">
+                  <div class="grupo-campo">
+                    <label for="email">Correo electrónico *</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="tucorreo@email.com"
+                      required
+                    />
+                  </div>
+                  <div class="grupo-campo">
+                    <label for="telefono">Teléfono</label>
+                    <input
+                      type="tel"
+                      id="telefono"
+                      name="telefono"
+                      placeholder="600 123 456"
+                    />
+                  </div>
+                </div>
+
+                <div class="grupo-campo">
+                  <label for="asunto">Asunto *</label>
+                  <select id="asunto" name="asunto" required>
+                    <option value="" disabled selected>
+                      ¿En qué podemos ayudarte?
+                    </option>
+                    <option value="info">
+                      Información sobre un tratamiento
+                    </option>
+                    <option value="reserva">
+                      Reservar o modificar una cita
+                    </option>
+                    <option value="precio">Consulta de precios y bonos</option>
+                    <option value="colaboracion">
+                      Propuesta de colaboración
+                    </option>
+                    <option value="incidencia">Incidencia o reclamación</option>
+                    <option value="otro">Otro motivo</option>
+                  </select>
+                </div>
+
+                <div class="grupo-campo">
+                  <label for="mensaje">Mensaje *</label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    placeholder="Escribe aquí tu consulta, duda o comentario..."
+                    rows="6"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="grupo-campo">
+                  <label for="como">¿Cómo nos has conocido?</label>
+                  <select id="como" name="como">
+                    <option value="" selected>Selecciona una opción</option>
+                    <option value="google">Búsqueda en Google</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="recomendacion">
+                      Recomendación de una amiga
+                    </option>
+                    <option value="publicidad">Publicidad online</option>
+                    <option value="pasando">Pasando por el centro</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+
+                <div class="consentimiento">
+                  <input
+                    type="checkbox"
+                    id="privacidad"
+                    name="privacidad"
+                    required
+                  />
+                  <label for="privacidad">
+                    He leído y acepto la
+                    <a
+                      href="#privacidad"
+                      style="color: #3f5220; text-decoration: underline"
+                      >Política de Privacidad</a
+                    >. Consiento el tratamiento de mis datos personales para
+                    responder a mi consulta. *
+                  </label>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar mensaje</button>
+                <p class="ayuda texto-centro" style="margin-top: 12px">
+                  Responderemos en un plazo máximo de 24 h en días laborables.
+                </p>
+              </form>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar-contacto animar retraso-2">
+              <!-- Datos de contacto -->
+              <div class="tarjeta-contacto">
+                <h3>Información de contacto</h3>
+
+                <div class="dato-contacto">
+                  <div class="dato-icono">📍</div>
+                  <div>
+                    <span class="dato-etiqueta">Dirección</span>
+                    <span class="dato-valor"
+                      >Calle Bienestar, 12, 2.º A<br />28010 Madrid</span
+                    >
+                  </div>
+                </div>
+
+                <div class="dato-contacto">
+                  <div class="dato-icono">📞</div>
+                  <div>
+                    <span class="dato-etiqueta">Teléfono</span>
+                    <span class="dato-valor">
+                      <a href="tel:+34912345678">+34 123 123 123</a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="dato-contacto">
+                  <div class="dato-icono">💬</div>
+                  <div>
+                    <span class="dato-etiqueta">WhatsApp</span>
+                    <span class="dato-valor">
+                      <a
+                        href="https://wa.me/34912345678"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >+34 123 123 123</a
+                      >
+                    </span>
+                  </div>
+                </div>
+
+                <div class="dato-contacto">
+                  <div class="dato-icono">✉️</div>
+                  <div>
+                    <span class="dato-etiqueta">Email</span>
+                    <span class="dato-valor">
+                      <a href="mailto:hola@munai.es">hola@munai.es</a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="dato-contacto">
+                  <div class="dato-icono">📷</div>
+                  <div>
+                    <span class="dato-etiqueta">Instagram</span>
+                    <span class="dato-valor">
+                      <a
+                        href="https://instagram.com/munai.estetica"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >@munai.estetica</a
+                      >
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Horarios -->
+              <div class="tarjeta-contacto">
+                <h3>Horario de apertura</h3>
+                <div class="fila-horario">
+                  <span class="dia">Lunes</span>
+                  <span class="hora">09:00 – 20:00</span>
+                </div>
+                <div class="fila-horario">
+                  <span class="dia">Martes</span>
+                  <span class="hora">09:00 – 20:00</span>
+                </div>
+                <div class="fila-horario">
+                  <span class="dia">Miércoles</span>
+                  <span class="hora">09:00 – 20:00</span>
+                </div>
+                <div class="fila-horario">
+                  <span class="dia">Jueves</span>
+                  <span class="hora">09:00 – 20:00</span>
+                </div>
+                <div class="fila-horario">
+                  <span class="dia">Viernes</span>
+                  <span class="hora">09:00 – 20:00</span>
+                </div>
+                <div class="fila-horario">
+                  <span class="dia">Sábado</span>
+                  <span class="hora">10:00 – 15:00</span>
+                </div>
+                <div class="fila-horario cerrado">
+                  <span class="dia">Domingo</span>
+                  <span class="hora">Cerrado</span>
+                </div>
+              </div>
+
+              <!-- Mapa -->
+              <div class="tarjeta-contacto">
+                <h3>Cómo llegar</h3>
+                <div
+                  class="mapa-placeholder"
+                  role="img"
+                  aria-label="Mapa de localización de Munai en Madrid"
+                >
+                  <span>🗺️</span>
+                  <p>
+                    Calle Bienestar, 12 · 28010 Madrid<br />
+                    <strong>Metro:</strong> Alonso Martínez<br />
+                    <strong>Bus:</strong> Líneas 3, 7, 21, 37
+                  </p>
+                </div>
+                <a
+                  href="https://maps.google.com/?q=Madrid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-verde"
+                  style="margin-top: 16px; display: block; text-align: center"
+                >
+                  Ver en Google Maps
+                </a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- PREGUNTAS FRECUENTES -->
+      <section class="faq">
+        <div class="contenedor texto-centro">
+          <span class="subtitulo-seccion">FAQ</span>
+          <h2 class="titulo-seccion">Preguntas <em>frecuentes</em></h2>
+          <div class="linea linea-centro"></div>
+
+          <div class="faq-grid">
+            <article class="faq-item animar retraso-1">
+              <h3>¿Necesito reservar con antelación?</h3>
+              <p>
+                Sí, recomendamos reservar con al menos 24–48 horas de antelación
+                para garantizar la disponibilidad del profesional y el
+                tratamiento deseado.
+              </p>
+            </article>
+
+            <article class="faq-item animar retraso-2">
+              <h3>¿Cómo puedo cancelar mi cita?</h3>
+              <p>
+                Puedes cancelar llamándonos o enviándonos un WhatsApp con al
+                menos 24 horas de antelación. Las cancelaciones tardías pueden
+                suponer un cargo del 50%.
+              </p>
+            </article>
+
+            <article class="faq-item animar retraso-3">
+              <h3>¿Ofrecéis bonos o descuentos?</h3>
+              <p>
+                Sí. Disponemos de bonos de sesiones múltiples con descuento y
+                packs especiales para novias, cumpleaños y regalos. Consulta
+                nuestras promociones contactándonos.
+              </p>
+            </article>
+
+            <article class="faq-item animar retraso-4">
+              <h3>¿Qué debo hacer antes de mi primera visita?</h3>
+              <p>
+                No es necesaria ninguna preparación especial. Llega unos 5
+                minutos antes para rellenar una breve ficha de salud. Si tienes
+                alergias, comunícanoslo al reservar.
+              </p>
+            </article>
+
+            <article class="faq-item animar retraso-1">
+              <h3>¿Los tratamientos son aptos para hombres?</h3>
+              <p>
+                Por supuesto. En Munai atendemos a todo el mundo. Muchos de
+                nuestros tratamientos están indicados tanto para hombres como
+                para mujeres.
+              </p>
+            </article>
+
+            <article class="faq-item animar retraso-2">
+              <h3>¿Dónde estáis ubicados?</h3>
+              <p>
+                Estamos en la Calle Bienestar, 12 en Madrid. Acceso fácil en
+                metro (Alonso Martínez) y varios autobuses urbanos. Parking
+                cercano disponible.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- BANNER CTA -->
+      <section class="banner-cta">
+        <div class="contenedor">
+          <h2>¿Lista para tu <em>transformación</em>?</h2>
+          <p>
+            Reserva tu cita ahora y empieza a sentirte como mereces. Primera
+            consulta siempre personalizada y sin compromiso.
+          </p>
+          <div class="banner-botones">
+            <a href="citas.html" class="btn-primario">Reservar cita</a>
+            <a href="servicios.html" class="btn-secundario">Ver tratamientos</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- POLÍTICA DE PRIVACIDAD -->
+      <section class="privacidad" id="privacidad">
+        <div class="contenedor">
+          <h2>Política de <em>Privacidad</em></h2>
+          <div class="privacidad-texto">
+            <p>
+              <strong>Responsable del tratamiento:</strong>
+              Munai Clínica Estética & Bienestar. CIF: B-XXXXXXXX. Calle
+              Bienestar, 12, 28010 Madrid. Contacto: hola@munai.es
+            </p>
+            <p>
+              <strong>Finalidad:</strong>
+              Los datos recogidos a través de los formularios se utilizan
+              exclusivamente para gestionar la reserva de citas, responder
+              consultas y, si el usuario lo consiente, enviar comunicaciones
+              comerciales.
+            </p>
+            <p>
+              <strong>Base legal:</strong>
+              El tratamiento de datos se fundamenta en el consentimiento del
+              interesado (Art. 6.1.a RGPD) y en la ejecución del contrato de
+              servicios (Art. 6.1.b RGPD).
+            </p>
+            <p>
+              <strong>Conservación:</strong>
+              Los datos se conservarán durante el tiempo necesario para la
+              relación comercial y los plazos legales aplicables.
+            </p>
+            <p>
+              <strong>Derechos del usuario:</strong>
+              Puedes ejercer tus derechos de acceso, rectificación, supresión y
+              portabilidad escribiendo a hola@munai.es, adjuntando copia de tu
+              documento de identidad.
+            </p>
+            <p>
+              <strong>Cesión de datos:</strong>
+              No se cederán datos a terceros salvo obligación legal.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <div class="contenedor">
+        <div class="footer-grid">
+          <div class="footer-marca">
+            <span class="footer-nombre">Munai</span>
+            <div class="footer-linea"></div>
+            <p>
+              Clínica estética y bienestar donde la belleza y la salud se unen
+              para transformar tu calidad de vida.
+            </p>
+            <div class="footer-redes">
+              <a href="#" class="red-social" aria-label="Instagram">📷</a>
+              <a href="#" class="red-social" aria-label="Facebook">📘</a>
+              <a href="#" class="red-social" aria-label="WhatsApp">💬</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-titulo">Navegación</h3>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="servicios.html">Tratamientos</a></li>
+              <li><a href="citas.html">Reservar cita</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-titulo">Contacto</h3>
+            <div class="footer-contacto">
+              <div class="footer-dato">
+                <span class="footer-icono">📍</span>
+                <span>Calle Bienestar, 12 · 28010 Madrid</span>
+              </div>
+              <div class="footer-dato">
+                <span class="footer-icono">📞</span>
+                <a href="tel:+34912345678">+34 123 123 123</a>
+              </div>
+              <div class="footer-dato">
+                <span class="footer-icono">✉️</span>
+                <a href="mailto:hola@munai.es">hola@munai.es</a>
+              </div>
+              <div class="footer-dato">
+                <span class="footer-icono">🕐</span>
+                <span>Lun–Vie 9:00–20:00 · Sáb 10:00–15:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Munai Clínica Estética &amp; Bienestar · Todos los
+            derechos reservados
+          </p>
+          <p>Proyecto DAW 1º · Lenguajes de Marcas</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tratamientos — Munai Clínica Estética</title>
+    <meta
+      name="description"
+      content="Descubre todos los tratamientos de Munai: faciales, corporales, fisioterapia, depilación, manicura y rituales de bienestar."
+    />
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/botones.css">
+    <link rel="stylesheet" href="./css/hero-pagina.css">
+    <link rel="stylesheet" href="./css/servicios.css">
+    <link rel="icon" type="image/png" href="./assets/Logo munai.png">
+  </head>
+  <body>
+    <!-- CABECERA -->
+    <header>
+      <nav>
+        <a href="index.html" class="logo">
+          Munai
+          <span>Clínica Estética & Bienestar</span>
+        </a>
+
+        <button
+          class="hamburger"
+          onclick="this.nextElementSibling.classList.toggle('abierto')"
+          aria-label="Abrir menú"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html" class="activo">Servicios</a></li>
+          <li><a href="citas.html">Reservar cita</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="citas.html" class="btn-nav">Reservar ahora</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO PÁGINA -->
+      <section class="hero-pagina">
+        <div class="contenedor">
+          <nav class="migas" aria-label="Ruta de navegación">
+            <a href="index.html">Inicio</a>
+            <span>/</span>
+            <span>Tratamientos</span>
+          </nav>
+          <h1 class="animar">Nuestros <em>Tratamientos</em></h1>
+          <p class="animar retraso-1">
+            Descubre nuestra amplia gama de servicios estéticos y terapéuticos.
+            Cada tratamiento está diseñado con los mejores protocolos y
+            productos del mercado.
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTENIDO SERVICIOS -->
+      <section class="pagina-servicios">
+        <div class="contenedor">
+          <!-- Navegación de categorías -->
+          <nav class="nav-categorias" aria-label="Categorías de tratamientos">
+            <a href="#faciales" class="nav-cat-link">🌿 Faciales</a>
+            <a href="#corporales" class="nav-cat-link">💆 Corporales</a>
+            <a href="#fisioterapia" class="nav-cat-link">⚡ Fisioterapia</a>
+            <a href="#depilacion" class="nav-cat-link">🌸 Depilación</a>
+            <a href="#manicura" class="nav-cat-link">💅 Manicura & Pedicura</a>
+            <a href="#rituales" class="nav-cat-link">✨ Rituales</a>
+          </nav>
+
+          <!-- FACIALES -->
+          <article class="categoria animar" id="faciales">
+            <div class="categoria-cabecera">
+              <div class="categoria-icono">🌿</div>
+              <h2>Tratamientos Faciales</h2>
+              <span class="badge-cantidad">8 tratamientos</span>
+            </div>
+
+            <div class="lista-servicios">
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Hidratación Profunda</h3>
+                  <p>
+                    Tratamiento intensivo con ácido hialurónico y vitamina C.
+                    Restaura la luminosidad y elasticidad cutánea.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">55 €</span>
+                  <span class="duracion">⏱ 60 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Limpieza Facial Profunda</h3>
+                  <p>
+                    Eliminación de impurezas, puntos negros y células muertas.
+                    Piel limpia y luminosa garantizada.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">45 €</span>
+                  <span class="duracion">⏱ 75 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Tratamiento Anti-aging</h3>
+                  <p>
+                    Protocolo reafirmante con radiofrecuencia y retinol. Reduce
+                    arrugas y devuelve firmeza en pocas sesiones.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">80 €</span>
+                  <span class="duracion">⏱ 90 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Peeling Químico</h3>
+                  <p>
+                    Exfoliación química controlada con ácidos AHA/BHA. Ideal
+                    para manchas, acné y poros dilatados.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">65 €</span>
+                  <span class="duracion">⏱ 45 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Mesoterapia Facial</h3>
+                  <p>
+                    Microinyecciones de cócteles vitamínicos para rejuvenecer y
+                    nutrir la piel desde el interior.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">90 €</span>
+                  <span class="duracion">⏱ 60 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Tratamiento Antimanchas</h3>
+                  <p>
+                    Protocolo despigmentante con vitamina C estabilizada y
+                    extractos vegetales. Unifica el tono de la piel.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">70 €</span>
+                  <span class="duracion">⏱ 75 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Lifting sin Bisturí</h3>
+                  <p>
+                    Técnica de tensado facial no invasiva. Efecto lifting
+                    inmediato y progresivo con masaje escultor.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">95 €</span>
+                  <span class="duracion">⏱ 90 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Tratamiento para Ojeras</h3>
+                  <p>
+                    Protocolo especial para el contorno de ojos. Reduce ojeras y
+                    bolsas con activos específicos.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">40 €</span>
+                  <span class="duracion">⏱ 40 min</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CORPORALES -->
+          <article class="categoria animar" id="corporales">
+            <div class="categoria-cabecera">
+              <div class="categoria-icono">💆</div>
+              <h2>Tratamientos Corporales</h2>
+              <span class="badge-cantidad">6 tratamientos</span>
+            </div>
+
+            <div class="lista-servicios">
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Masaje Relajante</h3>
+                  <p>
+                    Técnica sueca de relajación profunda. Libera tensiones,
+                    mejora la circulación y aporta bienestar total.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">65 €</span>
+                  <span class="duracion">⏱ 75 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Masaje con Piedras Volcánicas</h3>
+                  <p>
+                    Terapia de calor profundo con basalto volcánico.
+                    Descontractura músculos y equilibra la energía corporal.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">75 €</span>
+                  <span class="duracion">⏱ 90 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Drenaje Linfático</h3>
+                  <p>
+                    Técnica de Vodder para activar el sistema linfático. Reduce
+                    retención de líquidos y mejora la circulación.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">60 €</span>
+                  <span class="duracion">⏱ 60 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Envoltura Reductora</h3>
+                  <p>
+                    Tratamiento intensivo anti-celulitis con lodo, algas y
+                    vendas frías. Centímetros menos en pocas sesiones.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">70 €</span>
+                  <span class="duracion">⏱ 80 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Presoterapia</h3>
+                  <p>
+                    Compresión secuencial de miembros inferiores. Mejora la
+                    circulación venosa y reduce el cansancio de piernas.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">35 €</span>
+                  <span class="duracion">⏱ 45 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Exfoliación Corporal</h3>
+                  <p>
+                    Peeling corporal con sal del Himalaya y aceites esenciales.
+                    Piel increíblemente suave y renovada.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">45 €</span>
+                  <span class="duracion">⏱ 50 min</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- FISIOTERAPIA -->
+          <article class="categoria animar" id="fisioterapia">
+            <div class="categoria-cabecera">
+              <div class="categoria-icono">⚡</div>
+              <h2>Fisioterapia</h2>
+              <span class="badge-cantidad">5 tratamientos</span>
+            </div>
+
+            <div class="lista-servicios">
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Fisioterapia General</h3>
+                  <p>
+                    Valoración y tratamiento de lesiones del aparato locomotor.
+                    Protocolo individualizado para cada paciente.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">55 €</span>
+                  <span class="duracion">⏱ 60 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Terapia Neuromuscular</h3>
+                  <p>
+                    Técnica especializada para el tratamiento de puntos gatillo
+                    y dolor muscular crónico. Resultados rápidos.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">70 €</span>
+                  <span class="duracion">⏱ 60 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Punción Seca</h3>
+                  <p>
+                    Técnica de fisioterapia invasiva para eliminar puntos
+                    gatillo activos. Muy eficaz en contracturas resistentes.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">60 €</span>
+                  <span class="duracion">⏱ 45 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Electroterapia</h3>
+                  <p>
+                    Corrientes terapéuticas para alivio del dolor, regeneración
+                    tisular y mejora de la movilidad articular.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">40 €</span>
+                  <span class="duracion">⏱ 40 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Kinesiotaping</h3>
+                  <p>
+                    Aplicación de vendaje neuromuscular para sujetar y proteger
+                    músculos y articulaciones sin restringir movimiento.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">25 €</span>
+                  <span class="duracion">⏱ 20 min</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- DEPILACIÓN -->
+          <article class="categoria animar" id="depilacion">
+            <div class="categoria-cabecera">
+              <div class="categoria-icono">🌸</div>
+              <h2>Depilación</h2>
+              <span class="badge-cantidad">5 zonas</span>
+            </div>
+
+            <div class="lista-servicios">
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Depilación Piernas Completas</h3>
+                  <p>
+                    Cera caliente profesional. Piernas completamente depiladas
+                    desde rodilla hasta pie.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">35 €</span>
+                  <span class="duracion">⏱ 40 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Depilación Axilas</h3>
+                  <p>
+                    Cera caliente de precisión para zona de axilas. Rápido y
+                    duradero.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">12 €</span>
+                  <span class="duracion">⏱ 15 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Depilación Brasileña</h3>
+                  <p>
+                    Depilación integral de zona bikini con técnica brasileña.
+                    Máxima comodidad garantizada.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">30 €</span>
+                  <span class="duracion">⏱ 30 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Depilación Facial</h3>
+                  <p>
+                    Hilo y cera para cejas, labio superior y barbilla. Perfilado
+                    y definición perfectos.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">18 €</span>
+                  <span class="duracion">⏱ 20 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Depilación Espalda (Hombre)</h3>
+                  <p>
+                    Tratamiento de depilación masculina para espalda completa
+                    con cera caliente.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">40 €</span>
+                  <span class="duracion">⏱ 45 min</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- MANICURA Y PEDICURA -->
+          <article class="categoria animar" id="manicura">
+            <div class="categoria-cabecera">
+              <div class="categoria-icono">💅</div>
+              <h2>Manicura & Pedicura</h2>
+              <span class="badge-cantidad">4 tratamientos</span>
+            </div>
+
+            <div class="lista-servicios">
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Manicura Completa</h3>
+                  <p>
+                    Lima, cutículas, masaje de manos y esmaltado. Manos
+                    perfectas y cuidadas.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">22 €</span>
+                  <span class="duracion">⏱ 45 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Manicura Semipermanente</h3>
+                  <p>
+                    Esmaltado de larga duración con gel UV/LED. Dura hasta 3
+                    semanas sin astillarse.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">30 €</span>
+                  <span class="duracion">⏱ 60 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Pedicura Completa</h3>
+                  <p>
+                    Baño de pies, lima, cutículas, eliminación de durezas,
+                    masaje y esmaltado opcional.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">30 €</span>
+                  <span class="duracion">⏱ 60 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Pedicura Medicinal</h3>
+                  <p>
+                    Tratamiento específico para uñas encarnadas, callos y
+                    durezas. Máximo confort y salud del pie.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">38 €</span>
+                  <span class="duracion">⏱ 75 min</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- RITUALES -->
+          <article class="categoria animar" id="rituales">
+            <div class="categoria-cabecera">
+              <div class="categoria-icono">✨</div>
+              <h2>Rituales de Bienestar</h2>
+              <span class="badge-cantidad">3 experiencias</span>
+            </div>
+
+            <div class="lista-servicios">
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Ritual Munai Completo</h3>
+                  <p>
+                    La experiencia definitiva: limpieza facial + masaje
+                    relajante + envoltura corporal + manicura express.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">150 €</span>
+                  <span class="duracion">⏱ 3 h</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Ritual Detox & Relax</h3>
+                  <p>
+                    Exfoliación corporal + drenaje linfático + masaje aromático.
+                    Elimina toxinas y tensiones acumuladas.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">110 €</span>
+                  <span class="duracion">⏱ 2 h 30 min</span>
+                </div>
+              </div>
+
+              <div class="item-servicio">
+                <div class="info-servicio">
+                  <h3>Ritual Anti-aging Intensivo</h3>
+                  <p>
+                    Peeling facial + mesoterapia + radiofrecuencia + lifting sin
+                    bisturí. Tu piel, transformada en una sesión.
+                  </p>
+                </div>
+                <div class="meta-servicio">
+                  <span class="precio">180 €</span>
+                  <span class="duracion">⏱ 2 h 30 min</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Nota tarifas -->
+          <div class="nota-tarifas">
+            <span>💡</span>
+            <p>
+              <strong>Información sobre tarifas</strong>
+              Los precios corresponden a sesiones individuales e incluyen todos
+              los productos utilizados. Disponemos de bonos y packs con
+              descuento. Consulta con nuestro equipo para diseñar un plan
+              personalizado.
+            </p>
+          </div>
+
+          <!-- Botón reservar -->
+          <div class="texto-centro" style="margin-top: 48px">
+            <a href="citas.html" class="btn-primario">Reservar tratamiento</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <div class="contenedor">
+        <div class="footer-grid">
+          <div class="footer-marca">
+            <span class="footer-nombre">Munai</span>
+            <div class="footer-linea"></div>
+            <p>
+              Clínica estética y bienestar donde la belleza y la salud se unen
+              para transformar tu calidad de vida.
+            </p>
+            <div class="footer-redes">
+              <a href="#" class="red-social" aria-label="Instagram">📷</a>
+              <a href="#" class="red-social" aria-label="Facebook">📘</a>
+              <a href="#" class="red-social" aria-label="WhatsApp">💬</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-titulo">Navegación</h3>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="servicios.html">Tratamientos</a></li>
+              <li><a href="citas.html">Reservar cita</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-titulo">Contacto</h3>
+            <div class="footer-contacto">
+              <div class="footer-dato">
+                <span class="footer-icono">📍</span>
+                <span>Calle Bienestar, 12 · Madrid</span>
+              </div>
+              <div class="footer-dato">
+                <span class="footer-icono">📞</span>
+                <a href="tel:+34912345678">+34 123 123 123</a>
+              </div>
+              <div class="footer-dato">
+                <span class="footer-icono">✉️</span>
+                <a href="mailto:hola@munai.es">hola@munai.es</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Munai Clínica Estética &amp; Bienestar · Todos los
+            derechos reservados
+          </p>
+          <p>Proyecto DAW 1º · Lenguajes de Marcas</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
