@@ -115,6 +115,7 @@ Está construido únicamente con HTML5 y CSS3, con un pequeño JS para la creaci
 El README específico de la asignatura de Lenguajes de Marcas se encuentra en:
 **/docs/LM/README_LM.md**
 
+------
 
 ## Itinerario Personal para la Empleabilidad
 
