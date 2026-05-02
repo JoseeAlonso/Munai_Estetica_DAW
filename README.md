@@ -1,6 +1,57 @@
 # Munai_Estetica_DAW
 Proyecto Intermodular 1º DAW - Centro de estética y bienestar "Munai"
 
+## 📌 ¿Qué es este proyecto?
+
+Munai Estética es un proyecto intermodular desarrollado en Java que simula la gestión de una empresa ficticia de estética y bienestar.  
+
+Se trata de una aplicación de consola que permite administrar clientes, empleados, tratamientos y citas mediante el uso de una base de datos relacional.
+
+El proyecto integra conocimientos de programación, bases de datos, desarrollo de la página web y buenas prácticaso, siguiendo una arquitectura por capas.
+
+---
+
+## ¿Qué problema resuelve / para qué sirve?
+
+Este sistema resuelve la necesidad de organizar la información y la operativa de un centro de estética, permitiendo:
+
+- Gestionar clientes de forma estructurada  
+- Registrar y consultar citas  
+- Relacionar empleados con tratamientos  
+- Evitar errores como citas duplicadas o datos inválidos  
+- Centralizar toda la información en una base de datos  
+
+En esencia, simula un sistema real de gestión empresarial a pequeña escala.
+
+Además, permite la interacción con el usuario (por los momentos mediante consola y conexión a la BBDD) con la creación de una página web donde permite:
+
+- Gestionar citas
+- Conocer tratamientos y especialistas
+- Contacto con la empresa
+
+---
+
+## Tecnologías utilizadas
+
+- **Java** -> Lenguaje principal del proyecto  
+- **Maven** -> Gestión de dependencias y estructura del proyecto  
+- **MariaDB** -> Sistema de gestión de base de datos  
+- **JDBC** -> Conexión entre Java y la base de datos
+- **HTML y CSS** -> Página web del centro de estética
+- **IntelliJ IDEA** -> Entorno de desarrollo  
+- **Git & GitHub** -> Control de versiones  
+
+---
+
+## Instalación y ejecución
+
+### 1. Clonar el repositorio
+
+```bash
+https://github.com/JoseeAlonso/Munai_Estetica_DAW.git
+
+------
+
 ## Base de Datos
 
 La base de datos del proyecto se encuentra documentada en:
