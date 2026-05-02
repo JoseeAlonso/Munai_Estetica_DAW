@@ -1,0 +1,130 @@
+/* ===================================
+   FORMULARIOS.CSS
+   Campos, filas y horarios de formularios
+   Usado en: citas.html, contacto.html
+=================================== */
+
+/* --- Fila de dos columnas --- */
+.fila-form {
+  display: flex;
+  gap: 20px;
+}
+
+.fila-form .grupo-campo {
+  flex: 1;
+}
+
+/* --- Grupo de campo (label + input) --- */
+.grupo-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.grupo-campo label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6b7d52;
+}
+
+.grupo-campo input,
+.grupo-campo select,
+.grupo-campo textarea {
+  padding: 12px 14px;
+  border: 1.5px solid #d4e2bc;
+  border-radius: 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #222e14;
+  background-color: #fdfaf4;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: border-color 0.3s;
+}
+
+.grupo-campo input:focus,
+.grupo-campo select:focus,
+.grupo-campo textarea:focus {
+  outline: none;
+  border-color: #7d9954;
+  box-shadow: 0 0 0 3px rgba(125, 153, 84, 0.1);
+}
+
+.grupo-campo textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* --- Texto de ayuda bajo los campos --- */
+.ayuda {
+  font-size: 12px;
+  color: #9aaa80;
+  line-height: 1.5;
+}
+
+.ayuda.texto-centro {
+  margin-top: 12px;
+}
+
+/* --- Casilla de consentimiento --- */
+.consentimiento {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  color: #6b7d52;
+  align-items: flex-start;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.consentimiento input[type="checkbox"] {
+  margin-top: 3px;
+  accent-color: #3f5220;
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.consentimiento a {
+  color: #3f5220;
+  text-decoration: underline;
+}
+
+/* --- Tabla de horarios --- */
+.fila-horario {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eaf2df;
+  font-size: 14px;
+}
+
+.fila-horario:last-child {
+  border-bottom: none;
+}
+
+.fila-horario .dia {
+  color: #6b7d52;
+}
+
+.fila-horario .hora {
+  color: #3f5220;
+  font-weight: 600;
+}
+
+.fila-horario.cerrado .hora {
+  color: #9aaa80;
+  font-weight: 400;
+}
+
+/* --- Responsive formularios --- */
+@media (max-width: 768px) {
+  .fila-form {
+    flex-direction: column;
+  }
+}

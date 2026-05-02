@@ -1,0 +1,202 @@
+/* ===================================
+   BASE.CSS
+   Reset, fuentes, utilidades y animaciones
+   Usado en: TODAS las páginas
+=================================== */
+
+/* --- Fuentes de Google --- */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap");
+
+/* --- Reseteo básico --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #334020;
+  background-color: #fdfaf4;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* --- Secciones generales --- */
+section {
+  padding: 80px 40px;
+}
+
+/* --- Contenedor centrado --- */
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Utilidades de texto --- */
+.texto-centro {
+  text-align: center;
+}
+
+.subtitulo-seccion {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #7d9954;
+  margin-bottom: 8px;
+}
+
+.titulo-seccion {
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  font-weight: 400;
+  color: #222e14;
+  margin-bottom: 12px;
+}
+
+.titulo-seccion em {
+  font-style: italic;
+  color: #c4973f;
+}
+
+.linea {
+  width: 50px;
+  height: 2px;
+  background-color: #c4973f;
+  margin: 16px 0 28px;
+}
+
+.linea-centro {
+  margin: 16px auto 28px;
+}
+
+.descripcion {
+  font-size: 15px;
+  color: #6b7d52;
+  line-height: 1.8;
+  max-width: 560px;
+}
+
+.descripcion-centro {
+  margin: 0 auto;
+}
+
+/* --- Banner CTA (index + contacto) --- */
+.banner-cta {
+  background: linear-gradient(135deg, #222e14, #3f5220);
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.banner-cta h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #f6f1e7;
+  margin-bottom: 16px;
+}
+
+.banner-cta h2 em {
+  font-style: italic;
+  color: #c4973f;
+}
+
+.banner-cta p {
+  font-size: 16px;
+  color: rgba(246, 241, 231, 0.7);
+  max-width: 500px;
+  margin: 0 auto 36px;
+  line-height: 1.8;
+}
+
+.banner-botones {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* --- Animaciones --- */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes deslizar-izquierda {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animar {
+  animation: aparecer 0.7s ease both;
+}
+
+.animar-izq {
+  animation: deslizar-izquierda 0.7s ease both;
+}
+
+.retraso-1 {
+  animation-delay: 0.1s;
+}
+.retraso-2 {
+  animation-delay: 0.2s;
+}
+.retraso-3 {
+  animation-delay: 0.3s;
+}
+.retraso-4 {
+  animation-delay: 0.4s;
+}
+
+/* --- Responsive base --- */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 20px;
+  }
+
+  .titulo-seccion {
+    font-size: 28px;
+  }
+
+  .banner-cta h2 {
+    font-size: 28px;
+  }
+
+  .banner-botones {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-seccion {
+    font-size: 24px;
+  }
+}

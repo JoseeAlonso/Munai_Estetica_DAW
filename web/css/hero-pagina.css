@@ -1,0 +1,62 @@
+/* ===================================
+   HERO-PAGINA.CSS
+   Hero de páginas internas y migas de pan
+   Usado en: servicios.html, citas.html, contacto.html
+=================================== */
+
+.hero-pagina {
+  background-color: #222e14;
+  padding: 80px 40px 60px;
+}
+
+/* --- Migas de pan --- */
+.migas {
+  font-size: 13px;
+  color: rgba(246, 241, 231, 0.4);
+  margin-bottom: 16px;
+}
+
+.migas a {
+  color: #7d9954;
+}
+
+.migas a:hover {
+  color: #f6f1e7;
+}
+
+.migas span {
+  margin: 0 6px;
+  color: rgba(246, 241, 231, 0.25);
+}
+
+/* --- Título y descripción --- */
+.hero-pagina h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #f6f1e7;
+  margin-bottom: 12px;
+}
+
+.hero-pagina h1 em {
+  font-style: italic;
+  color: #c4973f;
+}
+
+.hero-pagina p {
+  font-size: 16px;
+  color: rgba(246, 241, 231, 0.6);
+  max-width: 500px;
+  line-height: 1.8;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .hero-pagina {
+    padding: 60px 20px 40px;
+  }
+
+  .hero-pagina h1 {
+    font-size: 32px;
+  }
+}

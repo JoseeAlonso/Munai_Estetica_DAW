@@ -1,0 +1,126 @@
+/* ===================================
+   NAV.CSS
+   Cabecera y menú de navegación
+   Usado en: TODAS las páginas
+=================================== */
+
+header {
+  background-color: #222e14;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 16px 40px;
+}
+
+/* --- Logo --- */
+.logo {
+  color: #f6f1e7;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #7d9954;
+}
+
+/* --- Menú de enlaces --- */
+nav ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav ul li a {
+  color: rgba(246, 241, 231, 0.75);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #a8bf7f;
+}
+
+nav ul li a.activo {
+  color: #f6f1e7;
+}
+
+/* --- Botón del menú --- */
+.btn-nav {
+  background-color: #c4973f;
+  color: #222e14 !important;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 700 !important;
+  transition: background-color 0.3s !important;
+}
+
+.btn-nav:hover {
+  background-color: #f6f1e7 !important;
+  color: #222e14 !important;
+}
+
+/* --- Hamburguesa (móvil) --- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #f6f1e7;
+}
+
+/* --- Responsive navegación --- */
+@media (max-width: 768px) {
+  nav {
+    padding: 14px 20px;
+  }
+
+  nav ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 12px;
+  }
+
+  nav ul.abierto {
+    display: flex;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 8px 4px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

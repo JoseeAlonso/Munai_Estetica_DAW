@@ -1,0 +1,180 @@
+/* ===================================
+   CITAS.CSS
+   Layout y componentes de reserva de cita
+   Usado en: citas.html
+=================================== */
+
+.pagina-citas {
+  background-color: #eaf2df;
+}
+
+/* --- Layout de dos columnas --- */
+.layout-citas {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+/* --- Columna izquierda: formulario --- */
+.formulario-wrap {
+  flex: 1.6;
+  background-color: #fdfaf4;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 24px rgba(34, 46, 20, 0.1);
+}
+
+.formulario-wrap h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  color: #222e14;
+  margin-bottom: 32px;
+}
+
+.formulario-wrap h2 em {
+  font-style: italic;
+  color: #c4973f;
+}
+
+/* Sección dentro del formulario */
+.seccion-form {
+  padding: 24px 0;
+  border-bottom: 1px solid #eaf2df;
+}
+
+.seccion-form:first-of-type {
+  padding-top: 0;
+}
+
+.seccion-form:last-of-type {
+  border-bottom: none;
+}
+
+/* Título de cada sección con número */
+.titulo-seccion-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: #222e14;
+  margin-bottom: 20px;
+}
+
+.num-paso {
+  width: 28px;
+  height: 28px;
+  background-color: #3f5220;
+  color: #f6f1e7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* --- Columna derecha: sidebar --- */
+.sidebar-citas {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Tarjeta de información genérica */
+.tarjeta-info {
+  background-color: #fdfaf4;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(34, 46, 20, 0.06);
+}
+
+.tarjeta-info h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: #222e14;
+  margin-bottom: 16px;
+}
+
+/* Párrafo de texto dentro de tarjeta (ej: cancelaciones) */
+.tarjeta-info > p {
+  font-size: 14px;
+  color: #6b7d52;
+  line-height: 1.7;
+}
+
+.tarjeta-info > p strong {
+  color: #222e14;
+}
+
+/* Tarjeta oscura (llamar/WhatsApp) */
+.tarjeta-oscura {
+  background-color: #222e14;
+}
+
+.tarjeta-oscura h3 {
+  color: #f6f1e7;
+  margin-bottom: 12px;
+}
+
+.tarjeta-oscura p {
+  font-size: 14px;
+  color: rgba(246, 241, 231, 0.65);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* Pasos del sidebar "¿Cómo funciona?" */
+.paso-info {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaf2df;
+}
+
+.paso-info:last-child {
+  border-bottom: none;
+}
+
+.paso-icono {
+  width: 32px;
+  height: 32px;
+  background-color: #eaf2df;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.paso-info .etiqueta {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #9aaa80;
+}
+
+.paso-info .valor {
+  display: block;
+  font-size: 13px;
+  color: #334020;
+  line-height: 1.5;
+}
+
+/* --- Responsive citas --- */
+@media (max-width: 768px) {
+  .layout-citas {
+    flex-direction: column;
+  }
+
+  .formulario-wrap {
+    padding: 24px;
+  }
+}
