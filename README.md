@@ -100,7 +100,7 @@ La configuración de la conexión a la base de datos se encuentra en la clase:
 
 El proyecto incluye evidencias de funcionamiento en el directorio:
 
-`/docs/sistemas_informaticos/`
+**`/docs/sistemas_informaticos/`**
 
 donde se documenta el entorno de ejecución, requisitos, instalación y capturas del sistema en funcionamiento.
 
@@ -111,7 +111,30 @@ donde se documenta el entorno de ejecución, requisitos, instalación y capturas
 El portal web de Munai es la parte visible del proyecto. 
 
 Está construido únicamente con HTML5 y CSS3, con un pequeño JS para la creación de la "hamburger", que despliega las demás secciones cuando la pantalla se hace mas pequeña.
+ 
+El README específico de la asignatura de Lenguajes de Marcas se encuentra en:
+**/docs/LM/README_LM.md**
 
+
+## Itinerario Personal para la Empleabilidad
+
+## Archivos incluidos
+ 
+### 01_perfil_profesional.md
+Presentación personal como futuro profesional del desarrollo web. Incluye qué estoy estudiando, qué tecnologías estoy aprendiendo, qué tipo de proyectos me interesan y qué me motiva.
+ 
+### 02_presentacion_proyecto.md
+Descripción del proyecto Munai orientada a empleabilidad: qué es, qué problema resuelve, para quién está pensado, qué tecnologías usa y qué habilidades demuestra.
+ 
+### 03_portfolio.md
+Muestra del proyecto con su estructura, instrucciones para abrirlo y un resumen de lo aprendido durante su desarrollo.
+ 
+### 04_reflexion_final.md
+Reflexión personal y sincera sobre el proceso: qué he aprendido, qué se me ha dado mejor, qué me ha costado más y qué mejoraría.
 La web nace de un concepto real: el emprendimiento de una esteticista y fisioterapeuta que busca ofrecer tratamientos de calidad en un entorno cercano y profesional. El diseño refleja esa identidad con una paleta de verdes oliva y dorados, tipografía serif elegante y un estilo limpio y relajante.
+
+Todo lo referido a esto, lo puede encontrar en la dirección:
+
+**docs/empleabilidad/**
 
 **El README.md con una breve explicación del desarrollo se encuentra en la carpeta docs/LM/README_LM.md**
