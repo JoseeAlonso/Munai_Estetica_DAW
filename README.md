@@ -1,7 +1,7 @@
 # Munai_Estetica_DAW
 Proyecto Intermodular 1º DAW - Centro de estética y bienestar "Munai"
 
-## 📌 ¿Qué es este proyecto?
+## ¿Qué es este proyecto?
 
 Munai Estética es un proyecto intermodular desarrollado en Java que simula la gestión de una empresa ficticia de estética y bienestar.  
 
