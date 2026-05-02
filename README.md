@@ -137,5 +137,3 @@ La web nace de un concepto real: el emprendimiento de una esteticista y fisioter
 Todo lo referido a esto, lo puede encontrar en la dirección:
 
 **docs/empleabilidad/**
-
-**El README.md con una breve explicación del desarrollo se encuentra en la carpeta docs/LM/README_LM.md**
