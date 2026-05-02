@@ -51,3 +51,15 @@ El proyecto incluye evidencias de funcionamiento en el directorio:
 `/docs/sistemas_informaticos/`
 
 donde se documenta el entorno de ejecución, requisitos, instalación y capturas del sistema en funcionamiento.
+
+------
+
+## Lenguaje de Marcas
+
+El portal web de Munai es la parte visible del proyecto. 
+
+Está construido únicamente con HTML5 y CSS3, con un pequeño JS para la creación de la "hamburger", que despliega las demás secciones cuando la pantalla se hace mas pequeña.
+
+La web nace de un concepto real: el emprendimiento de una esteticista y fisioterapeuta que busca ofrecer tratamientos de calidad en un entorno cercano y profesional. El diseño refleja esa identidad con una paleta de verdes oliva y dorados, tipografía serif elegante y un estilo limpio y relajante.
+
+**El README.md con una breve explicación del desarrollo se encuentra en la carpeta docs/LM/README_LM.md**
