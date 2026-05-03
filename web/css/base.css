@@ -1,13 +1,6 @@
-/* ===================================
-   BASE.CSS
-   Reset, fuentes, utilidades y animaciones
-   Usado en: TODAS las páginas
-=================================== */
 
-/* --- Fuentes de Google --- */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap");
 
-/* --- Reseteo básico --- */
 * {
   margin: 0;
   padding: 0;
@@ -35,18 +28,15 @@ ul {
   list-style: none;
 }
 
-/* --- Secciones generales --- */
 section {
   padding: 80px 40px;
 }
 
-/* --- Contenedor centrado --- */
 .contenedor {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* --- Utilidades de texto --- */
 .texto-centro {
   text-align: center;
 }
@@ -96,7 +86,6 @@ section {
   margin: 0 auto;
 }
 
-/* --- Banner CTA (index + contacto) --- */
 .banner-cta {
   background: linear-gradient(135deg, #222e14, #3f5220);
   text-align: center;
@@ -131,7 +120,7 @@ section {
   flex-wrap: wrap;
 }
 
-/* --- Animaciones --- */
+/*Animaciones*/
 @keyframes aparecer {
   from {
     opacity: 0;
@@ -175,7 +164,7 @@ section {
   animation-delay: 0.4s;
 }
 
-/* --- Responsive base --- */
+/*Responsive base*/
 @media (max-width: 768px) {
   section {
     padding: 60px 20px;
