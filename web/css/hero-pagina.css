@@ -1,15 +1,8 @@
-/* ===================================
-   HERO-PAGINA.CSS
-   Hero de páginas internas y migas de pan
-   Usado en: servicios.html, citas.html, contacto.html
-=================================== */
-
 .hero-pagina {
   background-color: #222e14;
   padding: 80px 40px 60px;
 }
 
-/* --- Migas de pan --- */
 .migas {
   font-size: 13px;
   color: rgba(246, 241, 231, 0.4);
@@ -29,7 +22,6 @@
   color: rgba(246, 241, 231, 0.25);
 }
 
-/* --- Título y descripción --- */
 .hero-pagina h1 {
   font-family: "Playfair Display", serif;
   font-size: 48px;
@@ -50,7 +42,7 @@
   line-height: 1.8;
 }
 
-/* --- Responsive --- */
+/*Responsive*/
 @media (max-width: 768px) {
   .hero-pagina {
     padding: 60px 20px 40px;
