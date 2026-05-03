@@ -1,21 +1,13 @@
-/* ===================================
-   CITAS.CSS
-   Layout y componentes de reserva de cita
-   Usado en: citas.html
-=================================== */
-
 .pagina-citas {
   background-color: #eaf2df;
 }
 
-/* --- Layout de dos columnas --- */
 .layout-citas {
   display: flex;
   gap: 32px;
   align-items: flex-start;
 }
 
-/* --- Columna izquierda: formulario --- */
 .formulario-wrap {
   flex: 1.6;
   background-color: #fdfaf4;
@@ -36,7 +28,6 @@
   color: #c4973f;
 }
 
-/* Sección dentro del formulario */
 .seccion-form {
   padding: 24px 0;
   border-bottom: 1px solid #eaf2df;
@@ -50,7 +41,6 @@
   border-bottom: none;
 }
 
-/* Título de cada sección con número */
 .titulo-seccion-form {
   display: flex;
   align-items: center;
@@ -76,7 +66,6 @@
   flex-shrink: 0;
 }
 
-/* --- Columna derecha: sidebar --- */
 .sidebar-citas {
   flex: 1;
   display: flex;
@@ -84,7 +73,6 @@
   gap: 20px;
 }
 
-/* Tarjeta de información genérica */
 .tarjeta-info {
   background-color: #fdfaf4;
   border-radius: 12px;
@@ -99,7 +87,6 @@
   margin-bottom: 16px;
 }
 
-/* Párrafo de texto dentro de tarjeta (ej: cancelaciones) */
 .tarjeta-info > p {
   font-size: 14px;
   color: #6b7d52;
@@ -110,7 +97,6 @@
   color: #222e14;
 }
 
-/* Tarjeta oscura (llamar/WhatsApp) */
 .tarjeta-oscura {
   background-color: #222e14;
 }
@@ -127,7 +113,6 @@
   margin-bottom: 16px;
 }
 
-/* Pasos del sidebar "¿Cómo funciona?" */
 .paso-info {
   display: flex;
   gap: 12px;
@@ -168,7 +153,7 @@
   line-height: 1.5;
 }
 
-/* --- Responsive citas --- */
+/*Responsive citas*/
 @media (max-width: 768px) {
   .layout-citas {
     flex-direction: column;
