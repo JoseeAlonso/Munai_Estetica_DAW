@@ -1,9 +1,3 @@
-/* ===================================
-   BOTONES.CSS
-   Estilos de todos los botones
-   Usado en: TODAS las páginas
-=================================== */
-
 .btn-primario {
   background-color: #c4973f;
   color: #222e14;
@@ -103,7 +97,7 @@
   text-align: center;
 }
 
-/* --- Responsive botones --- */
+/*Responsive de botones*/
 @media (max-width: 480px) {
   .btn-primario,
   .btn-secundario,
