@@ -1,19 +1,11 @@
-/* ===================================
-   SERVICIOS.CSS
-   Página de tratamientos y tarifas
-   Usado en: servicios.html
-=================================== */
-
 .pagina-servicios {
   background-color: #eaf2df;
 }
 
-/* Espacio extra bajo el último botón */
 .pagina-servicios .texto-centro {
   margin-top: 48px;
 }
 
-/* --- Navegación de categorías --- */
 .nav-categorias {
   display: flex;
   gap: 10px;
@@ -44,7 +36,6 @@
   background-color: #eaf2df;
 }
 
-/* --- Bloque de categoría --- */
 .categoria {
   margin-bottom: 60px;
 }
@@ -86,7 +77,6 @@
   border-radius: 20px;
 }
 
-/* --- Lista de tratamientos --- */
 .lista-servicios {
   display: flex;
   flex-direction: column;
@@ -129,7 +119,6 @@
   line-height: 1.6;
 }
 
-/* Precio y duración a la derecha */
 .meta-servicio {
   text-align: right;
   flex-shrink: 0;
@@ -149,7 +138,6 @@
   margin-top: 2px;
 }
 
-/* --- Nota de tarifas --- */
 .nota-tarifas {
   background-color: #fef9ed;
   border: 1px solid #dfc48a;
@@ -178,7 +166,7 @@
   margin-bottom: 4px;
 }
 
-/* --- Responsive servicios --- */
+/*Responsive servicios*/
 @media (max-width: 768px) {
   .nav-categorias {
     gap: 6px;
